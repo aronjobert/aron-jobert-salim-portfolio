@@ -51,7 +51,7 @@ export default function Navbar() {
 
             <nav ref={navRef} className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
 
-                <a href="https://prebuiltui.com?utm_source=eliana">
+                <a href="#!">
                     <img src="./assets/logo.png" alt="Logo" className="w-28 cursor-pointer mr-14 dark:hidden" />
                     <img src="./assets/logo_dark.png" alt="Logo" className="w-28 cursor-pointer mr-14 hidden dark:block" />
                 </a>
