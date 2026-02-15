@@ -18,7 +18,7 @@ export default function Footer() {
                 <p>© {new Date().getFullYear()} • All rights reserved • Aron Jobert Salim</p>
                 <ul className="flex items-center justify-center gap-10 mt-4 sm:mt-0">
                     <li><a target="_block" href="https://profile.indeed.com/p/arons-7268d1c">Indeed</a></li>
-                    <li><a target="_block" href="www.linkedin.com/in/aron-jobert-salim">LinkedIn</a></li>
+                    <li><a target="_block" href="https://www.linkedin.com/in/aron-jobert-salim">LinkedIn</a></li>
                     <li><a target="_block" href="https://www.onlinejobs.ph/jobseekers/info/986084">OnlineJobs PH</a></li>
                 </ul>
             </div>
