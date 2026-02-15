@@ -11,10 +11,11 @@ export default {
             },
             fontFamily: {
                 Outfit: ["Outfit", "sans-serif"],
-                Ovo: ["Ovo", "serif"]
+                Ovo: ["Ovo", "serif"],
+                Poppins: ["Poppins", "sans-serif"]
             },
             animation: {
-                spin_slow: 'spin 6s linear infinite'
+                spin_slow: 'spin 10s linear infinite'
             },
             colors: {
                 lightHover: '#fcf4ff',
@@ -24,7 +25,7 @@ export default {
             boxShadow: {
                 'black': '4px 4px 0 #000',
                 'white': '4px 4px 0 #fff',
-            }
+            },
         },
     },
     darkMode: 'selector',

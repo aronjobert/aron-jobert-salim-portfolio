@@ -56,7 +56,7 @@ export default function Navbar() {
                     <img src="./assets/logo_dark.png" alt="Logo" className="w-28 cursor-pointer mr-14 hidden dark:block" />
                 </a>
 
-                <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent ">
+                <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Poppins dark:border dark:border-white/30 dark:bg-transparent ">
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#top">Home</a></li>
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#services">Services</a></li>
@@ -70,7 +70,7 @@ export default function Navbar() {
                         <img src="./assets/sun_icon.png" alt="" className="w-5 hidden dark:block" />
                     </button>
 
-                    <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
+                    <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Poppins dark:border-white/30">
                         Contact
                         <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden" />
                         <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
@@ -83,7 +83,7 @@ export default function Navbar() {
 
                 </div>
                 {/* -- ----- mobile menu ------  -- */}
-                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
+                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Poppins dark:bg-darkHover dark:text-white">
 
                     <div className="absolute right-6 top-6" onClick={closeMenu}>
                         <img src="./assets/close-black.png" alt="" className="w-5 cursor-pointer dark:hidden" />
