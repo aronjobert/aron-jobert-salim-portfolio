@@ -91,7 +91,7 @@ const onSubmit = async (event) => {
 
             <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
 
-                <input type="hidden" name="subject" value="Eliana Jade - New form Submission" />
+                <input type="hidden" name="subject" value="Aron Jobert - Portfolio form Submission" />
 
                 <div className="grid gap-6 mt-10 mb-8 grid-cols-auto">
                     <input type="text" placeholder="Enter your name" className="flex-1 px-3 py-2 bg-white border border-gray-300 rounded-md outline-none focus:ring-1 dark:border-white/30 dark:bg-darkHover/30" required name="name" />
