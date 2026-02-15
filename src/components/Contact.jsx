@@ -2,29 +2,29 @@ import { useEffect, useState } from 'react'
 
 export default function Contact() {
     const [result, setResult] = useState("");
-    const onSubmit = async (event) => {
-        event.preventDefault();
-        const hCaptcha = event.target.querySelector('textarea[name=h-captcha-response]').value;
-        if (!hCaptcha) {
-            event.preventDefault();
-            setResult("Please fill out captcha field");
-            return
-        }
-        setResult("Sending....");
-        const formData = new FormData(event.target);
 
-        // ----- Enter your Web3 Forms Access key below---------
+const onSubmit = async (event) => {
+    event.preventDefault();
 
-        formData.append("access_key", "da758877-94fd-4500-b3c1-8dc441686da1");
+    const hCaptcha = event.target.querySelector('textarea[name=h-captcha-response]').value;
+    if (!hCaptcha) {
+        setResult("Please fill out captcha field");
+        return;
+    }
 
-        const res = {
-            success: true,
-            message: "Message sent successfully"
-        };
-        // const res = await fetch("https://api.web3forms.com/submit", {
-        //     method: "POST",
-        //     body: formData
-        // }).then((res) => res.json());
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    // ----- Enter your Web3 Forms Access key below---------
+    formData.append("access_key", "da758877-94fd-4500-b3c1-8dc441686da1");
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const res = await response.json();
 
         if (res.success) {
             console.log("Success", res);
@@ -32,9 +32,14 @@ export default function Contact() {
             event.target.reset();
         } else {
             console.log("Error", res);
-            setResult(res.message);
+            setResult(res.message || "Something went wrong");
         }
-    };
+    } catch (err) {
+        console.error("Submit error", err);
+        setResult("An error occurred. Please try again later.");
+    }
+};
+
 
     function CaptchaLoader() {
         const captchadiv = document.querySelectorAll('[data-captcha="true"]');
