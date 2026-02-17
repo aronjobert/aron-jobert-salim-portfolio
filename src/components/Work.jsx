@@ -71,7 +71,7 @@ export default function Work() {
 
             <h3 className="mb-2 text-2xl font-bold text-center font-Poppins">Duda Websites</h3>
 
-            <div className="grid grid-cols-1 gap-5 my-10 md:grid-cols-2 lg:grid-cols-4 dark:text-black">
+            <div className="grid grid-cols-1 gap-5 my-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 dark:text-black">
                 {work1.map((work1) => (
                     <div key={work1.name} className="relative bg-center bg-no-repeat bg-cover rounded-lg cursor-pointer aspect-square group" style={{ backgroundImage: `url(${work1.icon})` }}>
                         <div className="shadow-[0_4px_55px_rgba(149,0,162,0.15)] absolute flex items-center justify-between w-10/12 col-span-2 px-5 py-3 duration-500 -translate-x-1/2 bg-white rounded-md bottom-5 left-1/2 group-hover:bottom-7">
@@ -90,7 +90,7 @@ export default function Work() {
             
             <h3 className="mb-2 text-2xl font-bold text-center font-Poppins">Website Mockups</h3>
 
-            <div className="grid grid-cols-1 gap-5 my-10 md:grid-cols-2 lg:grid-cols-4 dark:text-black">
+            <div className="grid grid-cols-1 gap-5 my-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 dark:text-black">
                 {workMockups.map((workMockups) => (
                     <div key={workMockups.name} className="relative bg-center bg-no-repeat bg-cover rounded-lg cursor-pointer aspect-square group" style={{ backgroundImage: `url(${workMockups.icon})` }}>
                         <div className="shadow-[0_4px_55px_rgba(149,0,162,0.15)] absolute flex items-center justify-between w-10/12 col-span-2 px-5 py-3 duration-500 -translate-x-1/2 bg-white rounded-md bottom-5 left-1/2 group-hover:bottom-7">
@@ -108,7 +108,7 @@ export default function Work() {
 
             <h3 className="mb-2 text-2xl font-bold text-center font-Poppins">Shopify Websites</h3>
 
-            <div className="grid grid-cols-1 gap-5 my-10 md:grid-cols-2 lg:grid-cols-4 dark:text-black">
+            <div className="grid grid-cols-1 gap-5 my-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 dark:text-black">
                 {work.map((work) => (
                     <div key={work.name} className="relative bg-center bg-no-repeat bg-cover rounded-lg cursor-pointer aspect-square group" style={{ backgroundImage: `url(${work.icon})` }}>
                         <div className="shadow-[0_4px_55px_rgba(149,0,162,0.15)] absolute flex items-center justify-between w-10/12 col-span-2 px-5 py-3 duration-500 -translate-x-1/2 bg-white rounded-md bottom-5 left-1/2 group-hover:bottom-7">

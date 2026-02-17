@@ -35,7 +35,7 @@ export default function About() {
             <h4 className="mb-2 text-lg text-center font-poppins">Introduction</h4>
             <h2 className="text-5xl font-bold text-center font-Poppins">About me</h2>
 
-            <div className="flex flex-col items-center w-full gap-20 my-20 lg:flex-row">
+            <div className="flex flex-col items-center w-full gap-20 my-20 xl:flex-row">
                 <div className="relative mx-auto max-w-max">
                     <img src='./assets/user-image.jpeg' alt="" className="w-64 sm:w-80 rounded-3xl max-w-none" />
 
@@ -45,9 +45,9 @@ export default function About() {
                     </div>
                 </div>
                 <div className="flex-1 w-full">
-                    <p className="max-w-2xl mb-10 font-poppins">I am an experienced Web Designer & Developer with over 4 years of professional expertise in building and optimizing websites and eCommerce stores. Throughout my career, I have collaborated with clients across Duda, Shopify, and WordPress, helping them create high-performing, conversion-focused, and SEO-friendly online experiences.</p>
+                    <p className="max-w-2xl mb-10 lg:max-w-full font-poppins">I am an experienced Web Designer & Developer with over 4 years of professional expertise in building and optimizing websites and eCommerce stores. Throughout my career, I have collaborated with clients across Duda, Shopify, and WordPress, helping them create high-performing, conversion-focused, and SEO-friendly online experiences.</p>
 
-                    <ul className="grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3">
+                    <ul className="grid max-w-2xl grid-cols-1 gap-6 lg:max-w-full sm:grid-cols-3">
                         {data.map((data) => (
                             <li key={data.name} className="p-6 duration-500 border border-gray-300 cursor-pointer dark:border-white/30 rounded-xl hover:bg-lightHover hover:-translate-y-1 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
                                 <img src={data.icon1} alt="" className="mt-3 w-7 dark:hidden" />

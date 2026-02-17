@@ -1,6 +1,8 @@
 export default function Header() {
     return (
-        <div className="flex flex-col items-center justify-center w-11/12 h-screen max-w-6xl gap-4 mx-auto text-center">
+        <div className="flex flex-col items-center justify-center w-11/12 h-screen max-w-6xl gap-4 pt-24 mx-auto text-center">
+          
+
             <img src="./assets/aron-salim-profile.png" alt="" className="w-32 rounded-full" />
             <h3 className="flex items-end gap-2 mb-3 text-xl md:text-2xl font-Poppins">
                 Hi! I&apos;m Aron Jobert
