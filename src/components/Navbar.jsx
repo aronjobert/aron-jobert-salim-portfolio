@@ -52,42 +52,42 @@ export default function Navbar() {
             <nav ref={navRef} className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
 
                 <a href="#!">
-                    <img src="./assets/logo.png" alt="Logo" className="w-28 cursor-pointer mr-14 dark:hidden" />
-                    <img src="./assets/logo_dark.png" alt="Logo" className="w-28 cursor-pointer mr-14 hidden dark:block" />
+                    <img src="./assets/logo.png" alt="Logo" className="cursor-pointer w-28 mr-14 dark:hidden" />
+                    <img src="./assets/logo_dark.png" alt="Logo" className="hidden cursor-pointer w-28 mr-14 dark:block" />
                 </a>
 
-                <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Poppins dark:border dark:border-white/30 dark:bg-transparent ">
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#top">Home</a></li>
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#services">Services</a></li>
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#work">My Work</a></li>
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#contact">Contact me</a></li>
+                <ul ref={navLinkRef} className="items-center hidden gap-6 px-12 py-3 bg-white bg-opacity-50 rounded-full shadow-sm lg:flex lg:gap-8 font-Poppins dark:border dark:border-white/30 dark:bg-transparent ">
+                    <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#top">Home</a></li>
+                    <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#about">About me</a></li>
+                    <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#services">Services</a></li>
+                    <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#work">My Work</a></li>
+                    <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#contact">Contact me</a></li>
                 </ul>
 
                 <div className="flex items-center gap-4">
                     <button onClick={toggleTheme}>
                         <img src="./assets/moon_icon.png" alt="" className="w-5 dark:hidden" />
-                        <img src="./assets/sun_icon.png" alt="" className="w-5 hidden dark:block" />
+                        <img src="./assets/sun_icon.png" alt="" className="hidden w-5 dark:block" />
                     </button>
 
                     <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Poppins dark:border-white/30">
                         Contact
                         <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden" />
-                        <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
+                        <img src="./assets/arrow-icon-dark.png" alt="" className="hidden w-3 dark:block" />
                     </a>
 
-                    <button className="block md:hidden ml-3" onClick={openMenu}>
+                    <button className="block ml-3 lg:hidden" onClick={openMenu}>
                         <img src="./assets/menu-black.png" alt="" className="w-6 dark:hidden" />
-                        <img src="./assets/menu-white.png" alt="" className="w-6 hidden dark:block" />
+                        <img src="./assets/menu-white.png" alt="" className="hidden w-6 dark:block" />
                     </button>
 
                 </div>
                 {/* -- ----- mobile menu ------  -- */}
-                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Poppins dark:bg-darkHover dark:text-white">
+                <ul ref={sideMenuRef} className="fixed top-0 bottom-0 z-50 flex flex-col w-64 h-screen gap-4 px-10 py-20 transition duration-500 lg:hidden -right-64 bg-rose-50 font-Poppins dark:bg-darkHover dark:text-white">
 
                     <div className="absolute right-6 top-6" onClick={closeMenu}>
                         <img src="./assets/close-black.png" alt="" className="w-5 cursor-pointer dark:hidden" />
-                        <img src="./assets/close-white.png" alt="" className="w-5 cursor-pointer hidden dark:block" />
+                        <img src="./assets/close-white.png" alt="" className="hidden w-5 cursor-pointer dark:block" />
                     </div>
 
                     <li><a href="#top" onClick={closeMenu}>Home</a></li>
