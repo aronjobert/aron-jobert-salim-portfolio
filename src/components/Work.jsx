@@ -1,5 +1,11 @@
 export default function Work() {
     const work1 = [
+        {
+            name: 'Stone Restore By Hoover & Lane',
+            icon: './assets/stone-restoration-by-hoover-and-lane.png',
+            description: 'Client business website build',
+            link: 'https://www.stonerestorehhi.com/',
+        },
          {
             name: 'Best Car Detailing',
             icon: './assets/best_car_detailing.png',
