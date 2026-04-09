@@ -1,6 +1,12 @@
 export default function Work() {
     const work1 = [
         {
+            name: 'Valentine Detailing LLC',
+            icon: './assets/valentine-detailing-llc.png',
+            description: 'Client business website build',
+            link: 'https://www.valentinedetailingllc.com/',
+        },
+        {
             name: 'Stone Restore By Hoover & Lane',
             icon: './assets/stone-restoration-by-hoover-and-lane.png',
             description: 'Client business website build',
