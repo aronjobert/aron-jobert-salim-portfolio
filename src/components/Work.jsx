@@ -1,6 +1,12 @@
 export default function Work() {
     const work1 = [
         {
+            name: 'Tidepoint Construction',
+            icon: './assets/tidepoint-construction.png',
+            description: 'Client Website Redesign',
+            link: 'https://www.tidepointconstruction.com/',
+        },
+        {
             name: 'Valentine Detailing LLC',
             icon: './assets/valentine-detailing-llc.png',
             description: 'Client business website build',
