@@ -18,7 +18,7 @@ export default function Header() {
                 </a>
 
                 {/* <a href="./assets/Aron-Jobert-Salim-Resume.pdf" download */}
-                <a target="_block" href="https://drive.google.com/file/d/1qyyyb7g2EWrOtrvDeaoNWz7TF-a6vjBk/view?usp=drive_link"
+                <a target="_block" href="https://drive.google.com/file/d/17ZVJmpHRed6x1vCl_MTJoP4Ly6cqGWOS/view?usp=sharing"
                     className="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent dark:text-white">
                     My Resume <img src="./assets/download-icon.png" alt="" className="w-4 dark:invert" />
                 </a>
