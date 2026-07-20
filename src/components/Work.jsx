@@ -1,6 +1,12 @@
 export default function Work() {
     const workDuda = [
         {
+            name: 'Santerian',
+            icon: './assets/santerian.png',
+            description: 'Client Website Build',
+            link: 'https://www.santerian.com/',
+        },
+        {
             name: 'Tidepoint Construction',
             icon: './assets/tidepoint-construction.png',
             description: 'Client Website Redesign',
