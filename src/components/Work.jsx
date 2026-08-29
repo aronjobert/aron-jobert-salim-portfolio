@@ -1,6 +1,12 @@
 export default function Work() {
     const workDuda = [
         {
+            name: 'Hunter Kristian Photography',
+            icon: './assets/hunter-kristian-photography.png',
+            description: 'Client Website Build',
+            link: 'https://www.hunterkristianphotography.com/',
+        },
+        {
             name: 'Santerian',
             icon: './assets/santerian.png',
             description: 'Client Website Build',
