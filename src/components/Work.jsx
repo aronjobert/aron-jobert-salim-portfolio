@@ -108,12 +108,6 @@ export default function Work() {
             description: 'Client ecommerce website build',
             link: 'https://www.jadorecairns.com.au/',
         },
-        {
-            name: 'Salt Building & Pest Inspection',
-            icon: './assets/salt_building_pest_inspections.png',
-            description: 'Client business website build',
-            link: 'https://www.saltinspections.com.au/',
-        },
     ];
 
     const workMockups = [
