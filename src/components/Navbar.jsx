@@ -61,6 +61,7 @@ export default function Navbar() {
                     <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#about">About me</a></li>
                     <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#services">Services</a></li>
                     <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#work">My Work</a></li>
+                    <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#custom-development">Custom Code</a></li>
                     <li><a className='transition hover:text-gray-500 dark:hover:text-gray-300' href="#contact">Contact me</a></li>
                 </ul>
 
@@ -94,6 +95,7 @@ export default function Navbar() {
                     <li><a href="#about" onClick={closeMenu}>About me</a></li>
                     <li><a href="#services" onClick={closeMenu}>Services</a></li>
                     <li><a href="#work" onClick={closeMenu}>My Work</a></li>
+                    <li><a href="#custom-development" onClick={closeMenu}>Custom Code</a></li>
                     <li><a href="#contact" onClick={closeMenu}>Contact me</a></li>
                 </ul>
             </nav>

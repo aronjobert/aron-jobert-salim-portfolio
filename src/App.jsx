@@ -6,6 +6,7 @@ import About from './components/About'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import LenisScroll from './components/LenisScroll'
+import CustomDevelopment from './components/CustomDevelopment'
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
             <About />
             <Services />
             <Work />
+            <CustomDevelopment />
             <Contact />
             <Footer />
         </>
